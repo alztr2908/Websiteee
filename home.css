@@ -128,7 +128,7 @@ nav .fas, nav .fab {
   padding-left: 40px;
 }
 
-.courses-holder {
+.courses .courses-holder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: -webkit-box;
@@ -136,7 +136,7 @@ nav .fas, nav .fab {
   display: flex;
 }
 
-.courses-holder .course {
+.courses .courses-holder .course {
   margin-right: 30px;
   padding: 20px;
   width: 230px;
@@ -156,47 +156,47 @@ nav .fas, nav .fab {
   cursor: pointer;
 }
 
-.courses-holder .course .fas {
+.courses .courses-holder .course .fas {
   margin-bottom: 5px;
   font-size: 15px;
 }
 
-.courses-holder .course h1 {
+.courses .courses-holder .course h1 {
   font-weight: bold;
   font-size: 18px;
 }
 
-.courses-holder .course p {
+.courses .courses-holder .course p {
   font-weight: 400;
   font-size: 13px;
 }
 
-.courses-holder .course h2 {
+.courses .courses-holder .course h2 {
   margin-top: 10px;
   font-weight: bolder;
   font-size: 11px;
 }
 
-.courses-holder .course a:hover {
+.courses .courses-holder .course a:hover {
   margin-right: 5px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
-.courses-holder .course .fa-arrow-right {
+.courses .courses-holder .course .fa-arrow-right {
   font-size: 10px;
   margin-left: 5px;
 }
 
-.courses-holder .coe {
+.courses .courses-holder .coe {
   background: #FFE985;
 }
 
-.courses-holder .ece {
+.courses .courses-holder .ece {
   background: #FFA593;
 }
 
-.courses-holder .ee {
+.courses .courses-holder .ee {
   background: #6081F8;
 }
 
@@ -360,7 +360,7 @@ footer p {
     bottom: 0;
   }
   .course {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .subjects-wrapper {
     margin-right: 30px;
@@ -368,15 +368,18 @@ footer p {
   }
   .subjects-wrapper .subjects-container {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .subjects-wrapper .subjects-container .subject {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .courses-holder .course {
+@media only screen and (max-width: 680px) {
+  .courses .courses-holder {
+    width: 100%;
+  }
+  .courses .courses-holder .course {
     width: 100%;
   }
 }
