@@ -40,7 +40,6 @@ nav h1 {
 }
 
 .nav-item {
-    background-color: red;
     padding-top: 3em;
     flex-grow: 2;
 }
@@ -81,6 +80,10 @@ input[type="text"] {
 .courses ul {
     display: flex;
     margin: 2em 0;
+}
+
+.courses h1 {
+    font-size: 3rem;
 }
 
 .course {
@@ -125,7 +128,6 @@ input[type="text"] {
         height: auto;
         flex-direction: row;
 
-        background-color: red;
         font-size: 3rem;
     }
 
