@@ -8,16 +8,61 @@
         <title>EEE Website</title>
     </head>
     <body>
-        <!-- replace with logos -->
+        <!-- replace with logos {<logo>} -->
         <nav>
-            <h1>Logo</h1>
+            <h1>{Logo}</h1>
             <ul class="nav-item">
-                <li><a>home</a></li>
-                <li><a>guides</a></li>
-                <li><a>faculty(?)</a></li>
-                <li><a>subject(?)</a></li>
+                <li><a>{home}</a></li>
+                <li><a>{guides}</a></li>
+                <li><a>{faculty(?)}</a></li>
+                <li><a>{subject(?)}</a></li>
             </ul>
-            <h1>guides</h1>
+            <h1>{guides}</h1>
         </nav>
+        <main>
+            <section class="search-container">
+                <input type="text" id="search" placeholder="Search..."/>
+                <p>{switch}</p>
+            </section>
+            <section class="courses">
+                <h1>Degree Programs</h1>
+                <ul>
+                    <div class="course coe">
+                        <h1>{logo}</h1>
+                        <h1 class="course-title">Computer Engineering</h1>
+                        <p class="course-description">Bla bla bla bla bla bla bla bla bla bla bla </p>
+                        <h2 class="course-details"><a>View details</a></h2>
+                    </div>
+                    <div class="course ece">
+                        <h1>{logo}</h1>
+                        <h1 class="course-title">Computer Engineering</h1>
+                        <p class="course-description">Bla bla bla bla bla bla bla bla bla bla bla </p>
+                        <h2 class="course-details"><a>View details</a></h2>
+                    </div>
+                    <div class="course ee">
+                        <h1>{logo}</h1>
+                        <h1 class="course-title">Computer Engineering</h1>
+                        <p class="course-description">Bla bla bla bla bla bla bla bla bla bla bla </p>
+                        <h2 class="course-details"><a>View details</a></h2>
+                    </div>    
+                </ul>
+            </section>
+            <div class="subject-guides">
+                <section class="subjects">
+                    <h1>subjects</h1>
+                    <div class="subject-container">
+                        <button class="subject-button-general">general</button>
+                        <button class="subject-button-specialize">specialized</button>
+                        <div class="subject">
+                            <h1>general</h1>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+        <footer>
+            <h2>Copyright @ Webstudio 2021</h2>
+        </footer>
     </body>
 </html>

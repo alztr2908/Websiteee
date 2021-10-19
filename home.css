@@ -44,15 +44,97 @@ nav h1 {
     padding-top: 3em;
     flex-grow: 2;
 }
+
+.nav-item li {
+    text-align: center;
+    margin: 0.5em 0;
+}
 /* =========================== */
+
+/* main */
+main {
+    padding: 10em;
+    /* add the navbar left= 23em */
+    padding-left: calc(23em + 17em);
+}
+
+/* Search bar */
+
+input[type="text"] {
+    width: 400px;
+    font-size: 3rem;
+    position: relative;
+    right: 35px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5em;
+}
+
+.search-container p {
+    font-size: 2rem;
+}
+
+/* ============================ */
+.courses ul {
+    display: flex;
+    margin: 2em 0;
+}
+
+.course {
+    /* layout */
+    margin-right: 2em;
+    padding: 2em;
+
+    /* styles */
+    background-color: yellow;
+    border: 3px solid #000;
+    border-radius: 10%;
+}
+
+.course-title {
+    font-size: 3rem;
+}
+
+.course-description {
+    font-size: 2rem;
+}
+
+.course-details {
+    font-size: 1rem;
+}
+
+.subjects h1 {
+    font-size: 3rem;
+}
+
+.subject-container button {
+    font-size: 2rem;
+}
+
+/* ============================ */
 
 /* mobile-view */
 @media screen and (max-width: 700px) {
-    body {
-        background-color: blue;
-    }
     nav {
+        display: flex;
+        float: top;
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+
         background-color: red;
         font-size: 3rem;
+    }
+
+    .nav-item {
+        flex-grow: 0;
+        padding-top: 0em;
+    }
+
+    main {
+        padding: 5em;
     }
 }
