@@ -16,3 +16,5 @@ subjectGeneral.addEventListener("click", () => {
 subjectSpecialized.addEventListener("click", () => {
     subjectContent.innerHTML = subjectSpecialized.textContent
 })
+
+

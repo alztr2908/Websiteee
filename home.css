@@ -37,7 +37,7 @@ main {
 }
 
 /* nav */
-nav {
+.web-nav {
   /* layout */
   padding: 30px 0;
   position: fixed;
@@ -64,31 +64,32 @@ nav {
   border-right: 2px solid #000000;
 }
 
-nav .nav-item {
+.web-nav .nav-item {
   padding-top: 3em;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
 
-nav .nav-item li {
+.web-nav .nav-item li {
   list-style: none;
   text-align: center;
   margin: 1em 0;
 }
 
-nav .fas, nav .fab {
+.web-nav .fas, .web-nav .fab {
   font-size: 2.3rem;
   cursor: pointer;
 }
 
-/* =========================== */
 /* Search bar */
 .search-container {
   padding-left: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -126,14 +127,15 @@ nav .fas, nav .fab {
 /* ============================ */
 .courses {
   padding-left: 40px;
+  margin-bottom: 30px;
 }
 
 .courses .courses-holder {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .courses .courses-holder .course {
@@ -200,9 +202,8 @@ nav .fas, nav .fab {
   background: #6081F8;
 }
 
-/* ==========Articles================== */
+/* ==========guide================== */
 .subject-guides {
-  margin-top: 20px;
   padding-left: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,7 +271,7 @@ nav .fas, nav .fab {
   font-size: 20px;
 }
 
-.subject-guides .articles {
+.subject-guides .guide-holder .guides {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,7 +280,6 @@ nav .fas, nav .fab {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
-  height: 395px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -289,23 +289,23 @@ nav .fas, nav .fab {
   border-radius: 29px;
 }
 
-.subject-guides .articles img {
+.subject-guides .guide-holder .guides img {
   margin: 20px 0;
   width: 100%;
 }
 
-.subject-guides .articles h2 {
+.subject-guides .guide-holder .guides h2 {
   font-size: 30px;
 }
 
-.subject-guides .articles h2 span {
+.subject-guides .guide-holder .guides h2 span {
   margin-left: 7px;
   font-size: 12px;
   font-style: italic;
   font-weight: 300;
 }
 
-.subject-guides .articles .slider-holder {
+.subject-guides .guide-holder .guides .slider-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +316,7 @@ nav .fas, nav .fab {
           justify-content: center;
 }
 
-.subject-guides .articles .slider-holder .slider {
+.subject-guides .guide-holder .guides .slider-holder .slider {
   background: black;
   width: 20px;
   height: 10px;
@@ -324,7 +324,7 @@ nav .fas, nav .fab {
   border-radius: 5px;
 }
 
-.subject-guides .articles .slider-holder .slider:first-child {
+.subject-guides .guide-holder .guides .slider-holder .slider:first-child {
   background: #ADADAD;
 }
 
