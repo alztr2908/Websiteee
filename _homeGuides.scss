@@ -1,0 +1,76 @@
+.expandable-card {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  transition: all 0.33s;
+  padding-left: 40px;
+  
+}
+
+[cardContent]{
+  margin-bottom: 30px;
+  border: $border;
+  border-radius: 10px;
+  position: relative;
+  background: white;
+  cursor: pointer;
+  min-height: 10rem;
+  [collapsedContent] {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+  }
+  [expandedContent] {
+    visibility:hidden;
+    position:absolute;
+    left: 0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+    padding:24px;
+    overflow:hidden;
+  }
+  &:hover {
+    cursor: pointer;
+    transition: all 0.33s;
+    top: -5px;
+    
+  .arrow-icon {
+    transform: translate3d(0px, 0, 0);
+  }
+  .arrow-icon--circle {
+    stroke-dashoffset: 0;
+   }
+  }
+  svg {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  
+  &.arrow-icon {
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.3s ease;
+  vertical-align: middle;
+  }
+  .arrow-icon--circle {
+  transition: stroke-dashoffset .2s ease;
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+  }
+
+}
+}
+
+.expandable-card--title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.expandable-card--sub-title {
+  font-size: 14px;
+  color: black;
+  max-width: 80%;
+  min-height: 5rem;
+  line-height: 1.5rem;
+}
